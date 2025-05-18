@@ -1,6 +1,6 @@
-#WEEK 1
+### WEEK 1
 
-#my_pkg_1 :
+### my_pkg_1 :
 A publisher node and a subscriber node is created.  
 The publisher node generates a random number in [1,100) and publishes it to a topic.  
 The subscriber node subscribes to this topic and calculates square of the number. After this, it displays the square in terminal.  
