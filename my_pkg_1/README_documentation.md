@@ -434,19 +434,10 @@ This is the root of your ROS 2 package. When you build your workspace with colco
     Think of this as the Python equivalent of CMakeLists.txt.
 
 ### **3. setup.cfg**
-    Purpose: Provides metadata and build options in a simpler format (used with setup.py).
-    Often looks like:
-    ```
-    [develop]
-    script_dir=$base/lib/my_py_pkg
-    [install]
-    install_scripts=$base/lib/my_py_pkg
-    ```
+    Purpose: Provides metadata and build options in a simpler format (used with setup.py).  
     ROS uses this to install your scripts to the correct location.
 
 ### **4. my_py_pkg/ (Python Package Folder)**
-This is the actual Python module.
-• It must have the same name as the package (ROS uses this to find your code).
 • It contains your Python nodes and logic.
       
 ### **__init__.py**
@@ -458,7 +449,7 @@ This is the actual Python module.
 Purpose: Used internally by ament_index.  
     • Just an empty file named after your package  
     • Used so that ROS 2 tools like ros2 pkg list can discover your package at runtime  
-Leave it alone. It’s auto-managed.
+    It’s auto-managed.
   
 ### **6. test/**
 Purpose: Contains unit tests for your package (optional).
