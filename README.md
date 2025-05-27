@@ -1,6 +1,8 @@
 
-# **CONTENTS**
+**This repository contains the packages built while learning ros2.**
 ---
+
+# **CONTENTS**
 
 ### **Week 1 :**
 1. week_1
@@ -17,7 +19,6 @@
 
 
 ---
-**This repository contains the packages built while learning ros2.**
 
 **Each package contains a README.md files that describes the package.**
 
