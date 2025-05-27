@@ -22,3 +22,4 @@ def main(args=None):
     node.get_logger().info(f'Random Number generated : {n}')
     node.destroy_node()
     rclpy.shutdown()
+    
