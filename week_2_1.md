@@ -132,7 +132,7 @@ Any positive integer (e.g., 10)
 
 
 ### 5. Deadline  
-Sets a time limit for how often a message should arrive. If not received in time, it’s considered a missed deadline.  
+Sets a time limit for how often a message should arrive. If not received within this limit, the sys will notify us.  
 **Options:**  
 Duration (e.g., 500ms)  
 
