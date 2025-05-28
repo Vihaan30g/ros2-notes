@@ -56,6 +56,11 @@
         • 2. Obstacle detection node subscribes to /scan, calculates danger.
         • 3. It publishes movement commands to /cmd_vel.
         • 4. Motor controller node subscribes to /cmd_vel and drives the wheels.
+<br>
+
+**Namespace** : its a keyword we assign to a node. this keyword is prefix of the name of the node ( keyword/name/ ). Useful to distinguish nodes of same type.
+
+<br>
 
 
 
