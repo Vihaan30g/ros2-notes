@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<robot  xmlns:xacro = "https://www.ros.org/wiki/xacro">
+
+    <gazebo>
+        <plugin name="gazebo_ros_diff_drive" filename="libgazebo_ros_diff_drive.so">
+
+            <!-- Update rate in Hz -->
+            <update_rate>50</update_rate>
+
+            <!-- wheels -->
+            <right_joint>back_right_joint</right_joint>
+            <left_joint>back_left_joint</left_joint>
+            
+
+            <!-- kinematics -->
+            <wheel_separation>0.5</wheel_separation>   <!--dist b/w centres of the 2 opposite wheels on same axis, for our trolley:(0.05+0.4+0.05)-->
+            <wheel_diameter>0.2</wheel_diameter>
+            
+
+            <!-- output -->
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+
+            <odometry_topic>odom</odometry_topic>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>body</robot_base_frame>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+        </plugin>
+    </gazebo>
+
+</robot>

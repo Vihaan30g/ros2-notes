@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<robot name="trolley" xmlns:xacro = "https://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="materials.xacro"/>
+
+    <xacro:include filename="links_joints.xacro"/>
+
+    <xacro:include filename="colors.xacro"/>
+
+    <xacro:include filename="diff_drive_plugin.xacro"/>
+
+    <xacro:include filename="camera.xacro"/>    
+
+    <xacro:include filename="2d_lidar.xacro"/> 
+
+</robot>

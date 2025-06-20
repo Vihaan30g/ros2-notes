@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+
+<robot  xmlns:xacro = "https://www.ros.org/wiki/xacro">
+
+    <!--<link name="world" />-->
+
+
+    <link name="body">
+        <visual>
+            <origin xyz="0 0 0.15" rpy="0 0 0" />
+            <geometry>
+                <box size="0.8 0.4 0.3" />
+            </geometry>
+            <material name="red" />
+        </visual>
+        
+
+        <collision>
+            <origin xyz="0 0 0.15" rpy="0 0 0" />
+            <geometry>
+                <box size="0.8 0.4 0.3" />
+            </geometry>
+        </collision>
+
+        
+        <inertial>
+            <origin xyz="0 0 0.15" rpy="0 0 0" />
+            <mass value="10"/>
+            <inertia ixx="0.608333333" ixy="0" ixz="0" iyy="0.666666667" iyz="0" izz="0.208333333"/>
+        </inertial>
+
+
+    </link>
+
+<!--
+    <joint name="world_to_body" type="fixed">
+        <parent link = "world" />
+        <child link = "body" />
+        <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    </joint>
+-->
+
+
+
+    <xacro:macro name="wheel_link" params="prefix y f1 f2">
+        <link name="${prefix}_wheel">
+            <visual>
+                <origin xyz="0 ${y} 0" rpy="1.57 0 0" />
+                <geometry>
+                    <cylinder radius="0.1" length="0.1" />
+                </geometry>
+                <material name="grey" />
+            </visual>
+
+
+            <collision>
+                <origin xyz="0 ${y} 0" rpy="1.57 0 0" />
+                <geometry>
+                    <cylinder radius="0.1" length="0.1" />
+                </geometry>
+
+                <gazebo>
+                    <mu1>${f1}</mu1>
+                    <mu2>${f2}</mu2>
+                </gazebo>
+
+
+            </collision>
+
+
+            <inertial>
+                <origin xyz="0 ${y} 0" rpy="1.57 0 0" />
+                <mass value="2"/>
+                <inertia ixx="0.006666667" ixy="0" ixz="0" iyy="0.006666667" iyz="0" izz="0.01"/>
+            </inertial>
+
+        </link>
+    </xacro:macro>
+
+
+    <xacro:macro name="joint" params="wheel xyz">
+        <joint name="${wheel}_joint" type="continuous">
+            <origin xyz="${xyz}" rpy="0 0 0" />
+            <parent link = "body" />
+            <child link = "${wheel}_wheel" />
+            <axis xyz="0 1 0" />
+        </joint>
+    </xacro:macro>
+
+
+
+
+
+    <xacro:wheel_link prefix="front_right" y="-0.05" f1="0.1" f2="0.1"/>
+    <xacro:joint wheel="front_right" xyz="0.2 -0.2 0"/>
+
+
+    <xacro:wheel_link prefix="back_right" y="-0.05" f1="0.9" f2="0.9"/>
+    <xacro:joint wheel="back_right" xyz="-0.2 -0.2 0"/>
+
+
+    <xacro:wheel_link prefix="front_left" y="0.05" f1="0.1" f2="0.1"/>
+    <xacro:joint wheel="front_left" xyz="0.2 0.2 0"/>
+
+
+    <xacro:wheel_link prefix="back_left" y="0.05" f1="0.9" f2="0.9"/>
+    <xacro:joint wheel="back_left" xyz="-0.2 0.2 0"/>
+
+
+</robot>
+    
+    
+    
+    
+    
