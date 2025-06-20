@@ -32,7 +32,8 @@
     - trolley_description
     - obstacle_pkg
 4. [Demo_video](demo.mkv)
-5. [tf2_topicremap.md](tf2_topicremap.md)
+5. [tf2_topicremap.md](tf2_topicremap.md)  
+    *(these are some notes, for my own reference. they are very unorganized and can be ignored)*
     
 
 ---
