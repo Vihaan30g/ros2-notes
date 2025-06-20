@@ -26,42 +26,6 @@
 
     </link>
 
-    <joint name="2d_lidar_to_body_joint" type="fixed">
-        <parent link = "body" />
-        <child link = "2d_lidar_link" />
-        <origin xyz="0.4 0 0.32" rpy="0 0 0" />   <!--Raised by 0.02 to prevent body link blocking lidar-->
-    </joint>
-
-
-    <gazebo reference="2d_lidar_link">
-        <material>Gazebo/Red</material>
- 
-        <sensor name="laser" type="ray">
-            <pose> 0 0 0 0 0 0 </pose>
-            <visualize>true</visualize>
-            <update_rate>20</update_rate>
-            <ray>
-                <scan>
-                    <horizontal>
-                        <samples>360</samples>
-                        <min_angle>-3.14</min_angle>
-                        <max_angle>3.14</max_angle>
-                    </horizontal>
-                </scan>
-                <range>
-                    <min>0</min>
-                    <max>10</max>
-                </range>
-            </ray>
-            <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
-                <ros>
-                    <argument>~/out:=scan</argument>  <!--Throws warning, that the syntax is deprecated. But our ros2 version is not consistent with newer syntax. So just ignore warning.-->
-                </ros>
-                <output_type>sensor_msgs/LaserScan</output_type>
-                <frame_name>2d_lidar_link</frame_name>
-            </plugin>
-        </sensor>
-    </gazebo>
-
+    <!--INCOMPLETE-->
 
 </robot>
