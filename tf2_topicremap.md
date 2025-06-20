@@ -22,7 +22,8 @@ Monitor transform update delays (useful for debugging delays in TF updates) :
 <br><br>
 
 ### Theory :  
-*Add notes picture here*  
+[tf2_1](images/tf2_1.jpeg)  
+[tf2_2](images/tf2_2.jpeg)  
 <br><br>
 
 Broadcasting- publishing to /tf & /tf_static
@@ -79,7 +80,21 @@ ___
         <remap from="orignal_topic" to="new_topic" />
     </node>
     ```
+<br><br><br>
 
+___
+
+
+<br><br>
+
+[img](images/WhatsApp Image 2025-06-20 at 20.29.03 (1).jpeg)  
+
+[img](images/WhatsApp Image 2025-06-20 at 20.29.03.jpeg)  
+
+[img](WhatsApp Image 2025-06-20 at 20.29.02 (1).jpeg)  
+
+[img](WhatsApp Image 2025-06-20 at 20.29.02.jpeg)  
+<br><br>
 
 
 
