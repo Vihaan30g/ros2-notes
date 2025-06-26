@@ -7,7 +7,7 @@ package_name = 'obstacle_pkg'
 
 setup(
     name=package_name,
-    version='0.0.0',            
+    version='0.0.0',    
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -24,6 +24,9 @@ setup(
     entry_points={
         'console_scripts': [
             'sister = obstacle_pkg.obstacle_node:main',
+            'sister2 = obstacle_pkg.obstacle_node_3d:main',
+            'obstacle_pts = obstacle_pkg.obstacle_pts:main',
+            'all_pts = obstacle_pkg.all_pts:main',
         ],
     },
 )

@@ -10,8 +10,10 @@
 
     <xacro:include filename="diff_drive_plugin.xacro"/>
 
-    <xacro:include filename="camera.xacro"/>    
+    <!--<xacro:include filename="camera.xacro"/>-->    
 
-    <xacro:include filename="2d_lidar.xacro"/> 
+    <!--<xacro:include filename="2d_lidar.xacro"/>--> 
+
+    <xacro:include filename="3d_lidar.xacro"/> 
 
 </robot>

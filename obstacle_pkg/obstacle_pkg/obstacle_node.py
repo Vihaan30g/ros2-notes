@@ -6,6 +6,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 
+
 class ObstacleStopNode(Node):
     def __init__(self):
         super().__init__('obstacle_stop_node')
@@ -34,6 +35,7 @@ class ObstacleStopNode(Node):
         self.create_subscription(Twist, '/cmd_vel', self.velocity_callback, qos2)
         
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', qos2)
+
 
     def velocity_callback(self, msg):
         if msg.linear.x != 0.0 or msg.linear.y != 0.0 or msg.linear.z != 0.0:

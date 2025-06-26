@@ -16,6 +16,10 @@
 
     <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)" />
     
-    <node pkg="obstacle_pkg" exec="sister" name="obstacle_node" output="screen"/>
+    <!--<node pkg="obstacle_pkg" exec="sister" name="obstacle_node" output="screen"/>-->
+
+    <node pkg="obstacle_pkg" exec="sister2" name="obstacle_node_3d" output="screen"/>
+
+
  
 </launch>
