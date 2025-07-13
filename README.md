@@ -52,7 +52,7 @@
 
 
 5. Notes :  
-    1. [yolov5 cone detection pkg](yolov5_coneDetect_documentation.txt)  
+    1. [yolov5 cone detection pkg](yolov5_coneDetect_documentation.md)  
     2. more to be added ...
 
 
