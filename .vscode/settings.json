@@ -1,0 +1,30 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/vihaan/Desktop/ws_ros2_learning/build/week_3",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/week_3/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/build/week_1",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/week_1/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/build/temp_warning",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/temp_warning/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/sum_2_nums/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/build/obstacle_pkg",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/obstacle_pkg/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/my_pkg_1/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/vihaan/Desktop/ws_ros2_learning/build/week_3",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/week_3/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/build/week_1",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/week_1/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/build/temp_warning",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/temp_warning/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/sum_2_nums/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/build/obstacle_pkg",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/obstacle_pkg/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_ros2_learning/install/my_pkg_1/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/vihaan/Desktop/ws_trolley/build/vision_pkg",
+        "/home/vihaan/Desktop/ws_trolley/install/vision_pkg/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_trolley/build/obstacle_pkg",
+        "/home/vihaan/Desktop/ws_trolley/install/obstacle_pkg/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/vihaan/Desktop/ws_trolley/build/vision_pkg",
+        "/home/vihaan/Desktop/ws_trolley/install/vision_pkg/lib/python3.10/site-packages",
+        "/home/vihaan/Desktop/ws_trolley/build/obstacle_pkg",
+        "/home/vihaan/Desktop/ws_trolley/install/obstacle_pkg/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
