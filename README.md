@@ -1,7 +1,4 @@
 
-#### This repository contains the packages built while learning ros2.
----
-
 # **CONTENTS**
 
 
@@ -39,27 +36,31 @@
 
 ### **Detection of orange cone**
 
-1. [How to run](How_to_run.md)
-2. Packages(updated) :  
+1. [Task Documentation](task4_doc.md)  
+    (pros and cons or difficulty you faced with different methods)  
+2. [How to run](How_to_run.md)
+3. Packages(updated) :  
     - bringup
     - trolley_description
     - obstacle_pkg
     - orange_cone_detector
+        - [Orange Cone Detect Documentation](orange_cone_detector/orange_cone_doc.md)
+    - vision_pkg
+        - [OpenCV orange color detection documentation](vision_pkg/opencv_orange_detect.md)
     - yolov5_detector
-3. [Demo video](demo2.mkv)
-4. [Task Documentation]()  
-    (pros and cons or difficulty you faced with different methods)  
-
+        -  [yolov5 cone detection documentation](yolov5_detector/yolov5_coneDetect_documentation.md)  
+4. [Demo video](demo2.mkv)
 
 5. Notes :  
-    1. [yolov5 cone detection pkg](yolov5_coneDetect_documentation.md)  
-    2. more to be added ...
+    1. [yolov5 cone detection documentation](yolov5_detector/yolov5_coneDetect_documentation.md)  
+    2. [OpenCV orange color detection documentation](vision_pkg/opencv_orange_detect.md)
+    3. [Orange Cone Detect Documentation](orange_cone_detector/orange_cone_doc.md)
 
-
+<br>
 
 ---
 
-**Each package contains a README.md files that describes the package.**
+**Each package contains a .md files that describes the package.**
 
 
 

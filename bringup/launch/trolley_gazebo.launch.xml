@@ -20,12 +20,15 @@
 
     <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)" />
     
-    <!--<node pkg="obstacle_pkg" exec="sister" name="obstacle_node" output="screen"/>-->
+    
+    <!--<node pkg="obstacle_pkg" exec="sister" name="obstacle_node" output="screen"/>-->  <!--obstacle node for 2d lidar-->
 
-    <node pkg="obstacle_pkg" exec="sister2" name="obstacle_node_3d" output="screen"/>
+    <node pkg="obstacle_pkg" exec="sister2" name="obstacle_node_3d" output="screen"/>     <!--obstacle node for 3d lidar-->
 
 
-    <!--<node pkg="vision_pkg" exec="OrangeDetector" name="orange_detector_node" output="screen"/>-->
+    <!--<node pkg="vision_pkg" exec="OrangeDetector" name="orange_detector_node" output="screen"/>-->           <!--Orange color detection node using openCV-->
+    
+    <!--<node pkg="yolov5_detector" exec="OrangeCone_node" name="OrangeConeDetectorNode" output="screen"/>-->   <!-- COne detection node using yolov5-->
 
 
     <node pkg="orange_cone_detector" exec="yolo_opencv_cone_detect" name="OrangeConeDetectorNode" output="screen"/>
